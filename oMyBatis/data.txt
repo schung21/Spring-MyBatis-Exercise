@@ -1,5 +1,6 @@
 --------------------------------------------------------
---  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½Ý¿ï¿½ï¿½ï¿½-7ï¿½ï¿½-05-2019   
+--  ÆÄÀÏÀÌ »ý¼ºµÊ - ±Ý¿äÀÏ-7¿ù-05-2019   
+--------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table DEPT
 --------------------------------------------------------
@@ -14,9 +15,9 @@
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
   TABLESPACE "SYSTEM" ;
 
-   COMMENT ON COLUMN "SCOTT"."DEPT"."DEPTNO" IS 'ï¿½Î¼ï¿½ï¿½Úµï¿½';
-   COMMENT ON COLUMN "SCOTT"."DEPT"."DNAME" IS 'ï¿½Î¼ï¿½ï¿½ï¿½';
-   COMMENT ON COLUMN "SCOTT"."DEPT"."LOC" IS 'ï¿½ï¿½Ä¡';
+   COMMENT ON COLUMN "SCOTT"."DEPT"."DEPTNO" IS 'ºÎ¼­ÄÚµå';
+   COMMENT ON COLUMN "SCOTT"."DEPT"."DNAME" IS 'ºÎ¼­¸í';
+   COMMENT ON COLUMN "SCOTT"."DEPT"."LOC" IS 'À§Ä¡';
 --------------------------------------------------------
 --  DDL for Table EMP
 --------------------------------------------------------
@@ -36,7 +37,7 @@
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
   TABLESPACE "SYSTEM" ;
 
-   COMMENT ON COLUMN "SCOTT"."EMP"."JOB" IS 'ï¿½ï¿½ï¿½ï¿½';
+   COMMENT ON COLUMN "SCOTT"."EMP"."JOB" IS 'Á÷¾÷';
 REM INSERTING into SCOTT.DEPT
 SET DEFINE OFF;
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (10,'ACCOUNTING','NEW YORK');
@@ -44,11 +45,11 @@ Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (20,'RESEARCH','DALLAS');
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (30,'SALES','CHICAGO');
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (40,'OPERATIONS','busan');
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (41,'5','5');
-Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (57,'ï¿½ï¿½ï¿½ï¿½','ï¿½Ì´ï¿½');
-Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (49,'ï¿½ï¿½','ï¿½ÈµÅ¿ï¿½');
+Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (57,'ÀÚÀç','ÀÌ´ë');
+Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (49,'¿Ö','¾ÈµÅ¿ä');
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (51,'51','51');
 Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (55,'dkdkdk','dkdkd');
-Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (5,'ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½Ä±ï¿½');
+Insert into SCOTT.DEPT (DEPTNO,DNAME,LOC) values (5,'¼º¹Î','¼ÛÆÄ±¸');
 REM INSERTING into SCOTT.EMP
 SET DEFINE OFF;
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (1501,'lion','sales',null,to_date('19/02/21','RR/MM/DD'),5100,null,30);
@@ -60,7 +61,7 @@ Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (765
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7698,'BLAKE','MANAGER',7839,to_date('81/05/01','RR/MM/DD'),2850,null,30);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (1000,'lion','sales',null,to_date('19/02/21','RR/MM/DD'),5000,null,30);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7788,'SCOTT','ANALYST',7566,to_date('87/07/13','RR/MM/DD'),3000,null,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3003,'ï¿½Ø¹ï¿½3003','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3003,'ÁØ¹Î3003','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7844,'TURNER','SALESMAN',7698,to_date('81/09/08','RR/MM/DD'),2200,0,30);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7876,'ADAMS','CLERK',7788,to_date('87/07/13','RR/MM/DD'),1100,null,20);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7900,'JAMES','CLERK',7698,to_date('81/12/03','RR/MM/DD'),950,null,30);
@@ -69,126 +70,126 @@ Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (150
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7782,'CLARK','MANAGER',7839,to_date('81/06/09','RR/MM/DD'),2450,null,10);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7839,'KING','PRESIDENT',null,to_date('81/11/17','RR/MM/DD'),5000,null,10);
 Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7934,'MILLER','CLERK',7782,to_date('82/01/23','RR/MM/DD'),1300,null,10);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7935,'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½Î»ï¿½',null,to_date('19/02/20','RR/MM/DD'),3000,null,10);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3004,'ï¿½Ø¹ï¿½3004','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3005,'ï¿½Ø¹ï¿½3005','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3006,'ï¿½Ø¹ï¿½3006','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3007,'ï¿½Ø¹ï¿½3007','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3008,'ï¿½Ø¹ï¿½3008','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3009,'ï¿½Ø¹ï¿½3009','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3010,'ï¿½Ø¹ï¿½3010','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3011,'ï¿½Ø¹ï¿½3011','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3012,'ï¿½Ø¹ï¿½3012','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3013,'ï¿½Ø¹ï¿½3013','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3014,'ï¿½Ø¹ï¿½3014','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3015,'ï¿½Ø¹ï¿½3015','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3016,'ï¿½Ø¹ï¿½3016','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3017,'ï¿½Ø¹ï¿½3017','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3018,'ï¿½Ø¹ï¿½3018','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3019,'ï¿½Ø¹ï¿½3019','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3020,'ï¿½Ø¹ï¿½3020','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3021,'ï¿½Ø¹ï¿½3021','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3022,'ï¿½Ø¹ï¿½3022','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3023,'ï¿½Ø¹ï¿½3023','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3024,'ï¿½Ø¹ï¿½3024','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3025,'ï¿½Ø¹ï¿½3025','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3026,'ï¿½Ø¹ï¿½3026','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3027,'ï¿½Ø¹ï¿½3027','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3028,'ï¿½Ø¹ï¿½3028','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3029,'ï¿½Ø¹ï¿½3029','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3030,'ï¿½Ø¹ï¿½3030','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3031,'ï¿½Ø¹ï¿½3031','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3032,'ï¿½Ø¹ï¿½3032','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3033,'ï¿½Ø¹ï¿½3033','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3034,'ï¿½Ø¹ï¿½3034','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3035,'ï¿½Ø¹ï¿½3035','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3036,'ï¿½Ø¹ï¿½3036','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3037,'ï¿½Ø¹ï¿½3037','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3038,'ï¿½Ø¹ï¿½3038','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3039,'ï¿½Ø¹ï¿½3039','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3040,'ï¿½Ø¹ï¿½3040','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3041,'ï¿½Ø¹ï¿½3041','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3042,'ï¿½Ø¹ï¿½3042','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3043,'ï¿½Ø¹ï¿½3043','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3044,'ï¿½Ø¹ï¿½3044','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3045,'ï¿½Ø¹ï¿½3045','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3046,'ï¿½Ø¹ï¿½3046','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3047,'ï¿½Ø¹ï¿½3047','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3048,'ï¿½Ø¹ï¿½3048','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3049,'ï¿½Ø¹ï¿½3049','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3050,'ï¿½Ø¹ï¿½3050','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3051,'ï¿½Ø¹ï¿½3051','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3052,'ï¿½Ø¹ï¿½3052','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3053,'ï¿½Ø¹ï¿½3053','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3054,'ï¿½Ø¹ï¿½3054','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3055,'ï¿½Ø¹ï¿½3055','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3056,'ï¿½Ø¹ï¿½3056','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3057,'ï¿½Ø¹ï¿½3057','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3058,'ï¿½Ø¹ï¿½3058','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3059,'ï¿½Ø¹ï¿½3059','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3060,'ï¿½Ø¹ï¿½3060','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3061,'ï¿½Ø¹ï¿½3061','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3062,'ï¿½Ø¹ï¿½3062','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3063,'ï¿½Ø¹ï¿½3063','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3064,'ï¿½Ø¹ï¿½3064','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3065,'ï¿½Ø¹ï¿½3065','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3066,'ï¿½Ø¹ï¿½3066','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3067,'ï¿½Ø¹ï¿½3067','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3068,'ï¿½Ø¹ï¿½3068','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3069,'ï¿½Ø¹ï¿½3069','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3070,'ï¿½Ø¹ï¿½3070','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3071,'ï¿½Ø¹ï¿½3071','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3072,'ï¿½Ø¹ï¿½3072','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3073,'ï¿½Ø¹ï¿½3073','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3074,'ï¿½Ø¹ï¿½3074','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3075,'ï¿½Ø¹ï¿½3075','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3076,'ï¿½Ø¹ï¿½3076','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3077,'ï¿½Ø¹ï¿½3077','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3078,'ï¿½Ø¹ï¿½3078','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3079,'ï¿½Ø¹ï¿½3079','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3080,'ï¿½Ø¹ï¿½3080','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3081,'ï¿½Ø¹ï¿½3081','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3082,'ï¿½Ø¹ï¿½3082','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3083,'ï¿½Ø¹ï¿½3083','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3084,'ï¿½Ø¹ï¿½3084','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3085,'ï¿½Ø¹ï¿½3085','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3086,'ï¿½Ø¹ï¿½3086','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3087,'ï¿½Ø¹ï¿½3087','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3088,'ï¿½Ø¹ï¿½3088','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3089,'ï¿½Ø¹ï¿½3089','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3090,'ï¿½Ø¹ï¿½3090','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3091,'ï¿½Ø¹ï¿½3091','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3092,'ï¿½Ø¹ï¿½3092','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3093,'ï¿½Ø¹ï¿½3093','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3094,'ï¿½Ø¹ï¿½3094','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3095,'ï¿½Ø¹ï¿½3095','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3096,'ï¿½Ø¹ï¿½3096','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3097,'ï¿½Ø¹ï¿½3097','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3098,'ï¿½Ø¹ï¿½3098','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3099,'ï¿½Ø¹ï¿½3099','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3100,'ï¿½Ø¹ï¿½3100','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3101,'ï¿½Ø¹ï¿½3101','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3102,'ï¿½Ø¹ï¿½3102','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3103,'ï¿½Ø¹ï¿½3103','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3104,'ï¿½Ø¹ï¿½3104','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3105,'ï¿½Ø¹ï¿½3105','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3106,'ï¿½Ø¹ï¿½3106','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3107,'ï¿½Ø¹ï¿½3107','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3108,'ï¿½Ø¹ï¿½3108','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3109,'ï¿½Ø¹ï¿½3109','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3110,'ï¿½Ø¹ï¿½3110','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3111,'ï¿½Ø¹ï¿½3111','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3112,'ï¿½Ø¹ï¿½3112','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3113,'ï¿½Ø¹ï¿½3113','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3114,'ï¿½Ø¹ï¿½3114','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3115,'ï¿½Ø¹ï¿½3115','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3116,'ï¿½Ø¹ï¿½3116','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3117,'ï¿½Ø¹ï¿½3117','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3118,'ï¿½Ø¹ï¿½3118','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3119,'ï¿½Ø¹ï¿½3119','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3120,'ï¿½Ø¹ï¿½3120','ï¿½ï¿½ï¿½ï¿½',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3001,'ï¿½Ø¹ï¿½30','ï¿½ï¿½ï¿½ï¿½2',7369,null,3000,500,20);
-Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3002,'ï¿½Ø¹ï¿½300','ï¿½ï¿½ï¿½ï¿½',7369,null,3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7935,'°­¼º¹Î','ÀÎ»ç',null,to_date('19/02/20','RR/MM/DD'),3000,null,10);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3004,'ÁØ¹Î3004','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3005,'ÁØ¹Î3005','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3006,'ÁØ¹Î3006','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3007,'ÁØ¹Î3007','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3008,'ÁØ¹Î3008','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3009,'ÁØ¹Î3009','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3010,'ÁØ¹Î3010','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3011,'ÁØ¹Î3011','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3012,'ÁØ¹Î3012','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3013,'ÁØ¹Î3013','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3014,'ÁØ¹Î3014','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3015,'ÁØ¹Î3015','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3016,'ÁØ¹Î3016','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3017,'ÁØ¹Î3017','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3018,'ÁØ¹Î3018','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3019,'ÁØ¹Î3019','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3020,'ÁØ¹Î3020','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3021,'ÁØ¹Î3021','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3022,'ÁØ¹Î3022','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3023,'ÁØ¹Î3023','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3024,'ÁØ¹Î3024','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3025,'ÁØ¹Î3025','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3026,'ÁØ¹Î3026','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3027,'ÁØ¹Î3027','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3028,'ÁØ¹Î3028','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3029,'ÁØ¹Î3029','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3030,'ÁØ¹Î3030','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3031,'ÁØ¹Î3031','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3032,'ÁØ¹Î3032','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3033,'ÁØ¹Î3033','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3034,'ÁØ¹Î3034','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3035,'ÁØ¹Î3035','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3036,'ÁØ¹Î3036','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3037,'ÁØ¹Î3037','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3038,'ÁØ¹Î3038','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3039,'ÁØ¹Î3039','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3040,'ÁØ¹Î3040','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3041,'ÁØ¹Î3041','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3042,'ÁØ¹Î3042','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3043,'ÁØ¹Î3043','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3044,'ÁØ¹Î3044','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3045,'ÁØ¹Î3045','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3046,'ÁØ¹Î3046','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3047,'ÁØ¹Î3047','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3048,'ÁØ¹Î3048','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3049,'ÁØ¹Î3049','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3050,'ÁØ¹Î3050','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3051,'ÁØ¹Î3051','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3052,'ÁØ¹Î3052','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3053,'ÁØ¹Î3053','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3054,'ÁØ¹Î3054','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3055,'ÁØ¹Î3055','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3056,'ÁØ¹Î3056','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3057,'ÁØ¹Î3057','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3058,'ÁØ¹Î3058','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3059,'ÁØ¹Î3059','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3060,'ÁØ¹Î3060','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3061,'ÁØ¹Î3061','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3062,'ÁØ¹Î3062','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3063,'ÁØ¹Î3063','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3064,'ÁØ¹Î3064','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3065,'ÁØ¹Î3065','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3066,'ÁØ¹Î3066','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3067,'ÁØ¹Î3067','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3068,'ÁØ¹Î3068','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3069,'ÁØ¹Î3069','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3070,'ÁØ¹Î3070','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3071,'ÁØ¹Î3071','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3072,'ÁØ¹Î3072','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3073,'ÁØ¹Î3073','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3074,'ÁØ¹Î3074','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3075,'ÁØ¹Î3075','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3076,'ÁØ¹Î3076','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3077,'ÁØ¹Î3077','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3078,'ÁØ¹Î3078','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3079,'ÁØ¹Î3079','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3080,'ÁØ¹Î3080','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3081,'ÁØ¹Î3081','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3082,'ÁØ¹Î3082','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3083,'ÁØ¹Î3083','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3084,'ÁØ¹Î3084','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3085,'ÁØ¹Î3085','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3086,'ÁØ¹Î3086','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3087,'ÁØ¹Î3087','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3088,'ÁØ¹Î3088','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3089,'ÁØ¹Î3089','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3090,'ÁØ¹Î3090','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3091,'ÁØ¹Î3091','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3092,'ÁØ¹Î3092','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3093,'ÁØ¹Î3093','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3094,'ÁØ¹Î3094','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3095,'ÁØ¹Î3095','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3096,'ÁØ¹Î3096','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3097,'ÁØ¹Î3097','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3098,'ÁØ¹Î3098','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3099,'ÁØ¹Î3099','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3100,'ÁØ¹Î3100','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3101,'ÁØ¹Î3101','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3102,'ÁØ¹Î3102','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3103,'ÁØ¹Î3103','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3104,'ÁØ¹Î3104','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3105,'ÁØ¹Î3105','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3106,'ÁØ¹Î3106','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3107,'ÁØ¹Î3107','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3108,'ÁØ¹Î3108','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3109,'ÁØ¹Î3109','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3110,'ÁØ¹Î3110','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3111,'ÁØ¹Î3111','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3112,'ÁØ¹Î3112','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3113,'ÁØ¹Î3113','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3114,'ÁØ¹Î3114','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3115,'ÁØ¹Î3115','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3116,'ÁØ¹Î3116','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3117,'ÁØ¹Î3117','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3118,'ÁØ¹Î3118','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3119,'ÁØ¹Î3119','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3120,'ÁØ¹Î3120','¿µ¾÷',7369,to_date('19/05/26','RR/MM/DD'),3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3001,'ÁØ¹Î30','¿µ¾÷2',7369,null,3000,500,20);
+Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (3002,'ÁØ¹Î300','¿µ¾÷',7369,null,3000,500,20);
 --------------------------------------------------------
 --  DDL for Index PK_DEPT
 --------------------------------------------------------
@@ -246,19 +247,19 @@ Insert into SCOTT.EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (300
 
   CREATE OR REPLACE TRIGGER "SCOTT"."EMP_SAL_CHANGE" 
   BEFORE DELETE OR INSERT OR UPDATE ON emp
-    FOR EACH ROW--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ DMLï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½Úµå¸¶ï¿½ï¿½
-                -- Æ®ï¿½ï¿½ï¿½Å°ï¿½ ï¿½Ûµï¿½ï¿½Ç´ï¿½ Æ®ï¿½ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½Å¶ï¿½ï¿½ ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ÅµÇ´ï¿½ï¿½ï¿½ ï¿½Ñ¹ï¿½ï¿½ï¿½
-                -- ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ Æ®ï¿½ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½É¹ï¿½ Æ®ï¿½ï¿½ï¿½Å¶ï¿½ï¿½ ï¿½Ñ´ï¿½.  FOR EACH ROWï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½ ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½ï¿½Ì°ï¿½ 
-                --ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½Å¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½
+    FOR EACH ROW--¿©·¯¶óÀÎÀ» µ¹¸± ‹š °¢°¢ÀÇ ¶óÀÎ¿¡ ´ëÇØ¼­ DMLÀÇ ¿µÇâÀ» ¹Þ´Â ¸ðµç Çà, ·¹ÄÚµå¸¶´Ù
+                -- Æ®¸®°Å°¡ ÀÛµ¿µÇ´Â Æ®¸®°Å¸¦ Çà Æ®¸®°Å¶ó°í ÇÏ¸ç ¸î°ÇÀÇ µ¥ÀÌÅÍ°¡ »ðÀÔ, »èÁ¦, °»½ÅµÇ´õ¶óµµ ÇÑ¹ø¸¸
+                -- µ¿ÀÛÇÏ´Â Æ®¸®°Å¸¦ ¸í·É¹® Æ®¸®°Å¶ó°í ÇÑ´Ù.  FOR EACH ROWÀýÀÌ ÀÖ´Ù¸é Çà Æ®¸®°ÅÀÌ°í 
+                --Çà Æ®¸®°Å¿¡ ÇÑÇØ ·¹ÄÚµåÀÇ °ªÀ» Á¦¾îÇÒ ¼ö ÀÖ´Ù
          WHEN (new.sal>5000) DECLARE
         sal_diff    NUMBER;
   BEGIN
     DBMS_OUTPUT.ENABLE;
     sal_diff := :new.sal - :old.sal;
-    DBMS_OUTPUT.PUT_LINE('ï¿½Ì¸ï¿½: ' || :new.ename);
-    DBMS_OUTPUT.PUT_LINE('ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¿ï¿½: ' || :old.sal);
-    DBMS_OUTPUT.PUT_LINE('ï¿½Å±Þ¿ï¿½: ' || :new.sal);
-    DBMS_OUTPUT.PUT_LINE('ï¿½Þ¿ï¿½ ï¿½ï¿½ï¿½ï¿½: ' || sal_diff);
+    DBMS_OUTPUT.PUT_LINE('ÀÌ¸§: ' || :new.ename);
+    DBMS_OUTPUT.PUT_LINE('ÀÌÀü ±Þ¿©: ' || :old.sal);
+    DBMS_OUTPUT.PUT_LINE('½Å±Þ¿©: ' || :new.sal);
+    DBMS_OUTPUT.PUT_LINE('±Þ¿© Â÷ÀÌ: ' || sal_diff);
 END;
 /
 ALTER TRIGGER "SCOTT"."EMP_SAL_CHANGE" ENABLE;
@@ -270,14 +271,14 @@ ALTER TRIGGER "SCOTT"."EMP_SAL_CHANGE" ENABLE;
   BEFORE 
     INSERT OR UPDATE ON emp
   DECLARE
-    --ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    --º¯¼ö ¼±¾ð
     avg_sal NUMBER;
   BEGIN
     DBMS_OUTPUT.ENABLE;
     SELECT ROUND(AVG(sal), 3)
     INTO avg_sal
     FROM emp;
-    DBMS_OUTPUT.PUT_LINE('ï¿½Þ¿ï¿½ ï¿½ï¿½ï¿½: ' || avg_sal);
+    DBMS_OUTPUT.PUT_LINE('±Þ¿© Æò±Õ: ' || avg_sal);
 END;
 /
 ALTER TRIGGER "SCOTT"."SUM_TRIGGER" ENABLE;
@@ -288,9 +289,9 @@ ALTER TRIGGER "SCOTT"."SUM_TRIGGER" ENABLE;
   CREATE OR REPLACE TRIGGER "SCOTT"."CHECK_SALARY" 
   BEFORE INSERT OR UPDATE OR DELETE ON emp
   BEGIN
-  IF (TO_CHAR(sysdate, 'DY') IN ('ï¿½ï¿½', 'ï¿½ï¿½', 'ï¿½ï¿½'))
+  IF (TO_CHAR(sysdate, 'DY') IN ('Åä', 'ÀÏ', '¸ñ'))
   THEN
-    RAISE_application_error(-20500, 'ï¿½Ö¸ï¿½ ï¿½Û¾ï¿½ ï¿½Ò°ï¿½');
+    RAISE_application_error(-20500, 'ÁÖ¸» ÀÛ¾÷ ºÒ°¡');
   END IF;
 END;
 /
