@@ -1,6 +1,6 @@
 # Spring-MyBatis-Exercise
 
-개발 환경    : Spring STS (JDK 1.8), Spring MVC, MyBatis, Tomcat 8.5
+▶ 개발 환경    : Spring STS (JDK 1.8), Spring MVC, MyBatis, Tomcat 8.5
 
 ▶ OS 및 DB    : Windows 10, Oracle DB
 
